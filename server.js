@@ -5,7 +5,7 @@ var logger = require("morgan");
 var mongoose = require("mongoose");
 
 // Require schema
-
+var Address = require("./models/Address");
 
 // Create a new express app
 var app = express();
@@ -36,6 +36,8 @@ db.once("open", function() {
 });
 
 // Routing
+
+
 
 // Starting our express server
 app.listen(PORT, function() {
